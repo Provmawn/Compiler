@@ -1,5 +1,1 @@
-I think the Committee made a right choice with this feature. The filesystem library is nothing new, as it's modeled directly over Boost filesystem, which is available since 2003 (with the version 1.30). There are only a little differences, plus some wording changes. Not to mention, all of this is also based on POSIX.
-
-Thanks to this approach it's easy to port the code. Moreover, there's a good chance a lot of developers are already familiar with the library. (Hmmm... so why I am not that dev? :))
-
-The library is located in the <filesystem> header. It uses namespace std::filesystem.
+while(fahr < upper) a = 23.00 whileend

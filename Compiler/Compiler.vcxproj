@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="src\FileException.h" />
     <ClInclude Include="src\Lexer.h" />
+    <ClInclude Include="src\Token.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\file.txt" />
