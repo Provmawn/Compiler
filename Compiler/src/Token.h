@@ -18,9 +18,17 @@ public:
 	};
 
 	Token(const std::string &token_literal, Type type);
-	const char* getType(Type type) const;
+	const std::string& getValue() const
+	{
+		return m_token_literal;
+	}
+	Type getType() const
+	{
+		return m_type;
+	}
 	friend std::ostream& operator<<(std::ostream &out, const Token &token);
 private:
+	const char* printType(Type type) const;
 	std::string m_token_literal{};
 	Type m_type{};
 };
@@ -30,7 +38,8 @@ Token::Token(const std::string &token_literal, Type type)
 {
 }
 
-const char* Token::getType(Type type) const
+
+const char* Token::printType(Type type) const
 {
 
 	switch (type)
@@ -52,9 +61,10 @@ const char* Token::getType(Type type) const
 	}
 }
 
+
 std::ostream& operator<<(std::ostream &out, const Token &token)
 {
-	out << token.m_token_literal << '\t' << token.getType(token.m_type);
+	out << token.m_token_literal << '\t' << token.printType(token.m_type);
 	return out;
 }
 #endif

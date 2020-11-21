@@ -1,10 +1,9 @@
-#include "Lexer.h"
+#include "Parser.h"
 #include <iostream>
 
 int main()
 {
-	Lexer lexer{ "src/file.txt" };
-	lexer.tokenize();
-	std::cout << lexer << '\n';
+	Parser parser{ "src/file.txt" };
+	parser.parse();
 	return 0;
 }

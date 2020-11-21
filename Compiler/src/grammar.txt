@@ -1,0 +1,20 @@
+<Expression> ::= <Expression> + <Term> | <Expression> - <Term> | <Term>
+<Term> ::= <Term> * <Factor> | <Term> / <Factor> | <Factor>
+<Factor> ::= <Identifier> | <Number> | (<Expression>)
+
+E -> TE'
+E' -> +TE'
+E' -> -TE'
+E' -> e
+T -> FT'
+T' -> *FT'
+T' -> /FT'
+T' -> e
+F -> ID
+F -> num
+F -> (E)
+ID -> id
+STATEMENT -> DECLARATION
+DECLARATION -> bool
+DECLARATION -> float
+DECLARATION -> int

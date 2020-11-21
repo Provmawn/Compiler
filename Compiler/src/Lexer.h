@@ -18,6 +18,13 @@ public:
 	Lexer(std::string_view path);
 
 	void tokenize();
+	std::vector<Token>& getTokens() { return m_tokens; }
+
+	int getSize() { return static_cast<int>(m_tokens.size()); }
+	Token& operator[](int index)
+	{
+		return m_tokens.at(index);
+	}
 	friend std::ostream& operator<<(std::ostream &out, const Lexer &lexer);
 private:
 	// final states are specified within the documentation with and underline

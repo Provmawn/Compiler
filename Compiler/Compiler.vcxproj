@@ -154,12 +154,15 @@
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AbstractSyntaxTree.h" />
     <ClInclude Include="src\FileException.h" />
     <ClInclude Include="src\Lexer.h" />
+    <ClInclude Include="src\Parser.h" />
     <ClInclude Include="src\Token.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\file.txt" />
+    <Text Include="src\grammar.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
