@@ -32,9 +32,6 @@
     <ClInclude Include="src\Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\AbstractSyntaxTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\file.txt" />

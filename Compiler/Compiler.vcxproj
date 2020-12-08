@@ -154,7 +154,6 @@
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\AbstractSyntaxTree.h" />
     <ClInclude Include="src\FileException.h" />
     <ClInclude Include="src\Lexer.h" />
     <ClInclude Include="src\Parser.h" />
